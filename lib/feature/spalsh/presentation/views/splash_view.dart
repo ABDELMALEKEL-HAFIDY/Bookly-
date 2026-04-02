@@ -1,0 +1,15 @@
+import 'package:bookly_app/core/utils/app_theme.dart';
+import 'package:bookly_app/feature/spalsh/presentation/views/widgets/splash_view_body.dart';
+import 'package:flutter/material.dart';
+
+class SplashView extends StatelessWidget {
+  const SplashView({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: AppColors.scafoldbg,
+      body: SplashViewBody(),
+      );
+  }
+}

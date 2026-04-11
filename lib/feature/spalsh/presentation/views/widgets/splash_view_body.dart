@@ -15,7 +15,13 @@ class SplashViewBody extends StatelessWidget {
           Assets.imagesLogo,
           width: 70,
           height: 70,
-          fit: BoxFit.cover,
-          )]);
+         // fit: BoxFit.cover,
+        ),
+        SizedBox(height: 12,),
+        Text('Read Books Free',
+            textAlign: TextAlign.center,
+        ),
+      ],
+    );
   }
 }

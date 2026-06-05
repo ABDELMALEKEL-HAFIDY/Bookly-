@@ -5,5 +5,9 @@ class Assets {
   /// Assets for imagesLogo
   /// assets/images/logo.svg
   static const String imagesLogo = "assets/images/logo.svg";
+
+  /// Assets for imagesSearch
+  /// assets/images/search.png
+  static const String imagesSearch = "assets/images/search.png";
 }
 

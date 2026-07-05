@@ -1,39 +1,14 @@
-import 'package:bookly_app/core/utils/assets.dart';
+
+import 'package:bookly_app/feature/home/presentation/views/widgets/custom_app_bar.dart';
+import 'package:bookly_app/feature/home/presentation/views/widgets/custom_list_view_item.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Column(children: const [CustomAppBar()]);
+    return Column(children: const [CustomAppBar(), CustomHomeViewItem()]);
   }
 }
 
-class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 30),
-      child: Row(
-        children: [
-          SvgPicture.asset(Assets.imagesLogo, height: 30, width: 24),
-          const Spacer(),
-          IconButton(
-            onPressed: () {},
-            icon: Image.asset(
-              Assets.imagesSearch,
-
-              width: 24,
-              //height: 100,
-              color: Colors.white,
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
